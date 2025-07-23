@@ -1,0 +1,122 @@
+/* === Global Reset === */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+/* === AI Zone Main Section === */
+.ai-home-scroll-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  position: relative;
+  z-index: 2;
+}
+
+.ai-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+/* === AI Zone Cards === */
+.ai-zone-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.ai-card {
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  color: white;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ background: radial-gradient(circle at top left, #1e3a8a, #080811);
+
+}
+
+.ai-card:nth-child(2) {
+  background: linear-gradient(145deg, #6d0b4c, #080811);
+}
+
+.ai-card:nth-child(3) {
+  background: linear-gradient(145deg, #025837, #080811); 
+}
+
+.ai-card:hover {
+  transform: translateY(-8px);
+  
+}
+
+.ai-card h3 {
+  font-size: 1.3rem;
+  color: #e7e7e7;
+  margin-bottom: 10px;
+}
+
+.ai-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.ai-card .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-tags span {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.ai-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.ai-card .btn {
+  background: linear-gradient(145deg, #0b35a8, #27274b); 
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ai-card .btn:hover {
+  background-color: #00cccc;
+}
+/* Mass Bunk Poll Card */
+.mass-bunk-card {
+  background: linear-gradient(145deg, #3b0764, #080811);
+}
+
+/* Imposter Card */
+.imposter-card {
+  background: linear-gradient(145deg, #7c2d12, #080811);
+}
+

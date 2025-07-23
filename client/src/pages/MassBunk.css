@@ -1,0 +1,130 @@
+/* === Global Mass Bunk Styles === */
+.mass-bunk-page {
+  padding: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #e0e0ff;
+  background-color: #0a0a1f;
+  min-height: 100vh;
+}
+
+/* === Buttons === */
+button {
+  font-family: inherit;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.create-poll {
+  background: linear-gradient(135deg, #7c3aed, #4c1d95);
+  color: white;
+}
+
+button.vote-yes {
+  background: linear-gradient(135deg, #10b981, #065f46);
+  color: white;
+}
+
+button.vote-no {
+  background: linear-gradient(135deg, #f59e0b, #78350f);
+  color: black;
+}
+
+button.close-poll {
+  background: linear-gradient(135deg, #ef4444, #7f1d1d);
+  color: white;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* === Poll Card === */
+.poll-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* === Past Polls Section === */
+.poll-stats {
+  margin-top: 3rem;
+  font-size: 1rem;
+  max-height: 80vh; /* You can adjust this */
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Optional: WebKit-specific scrollbar inside .poll-stats */
+.poll-stats::-webkit-scrollbar {
+  width: 6px;
+}
+
+.poll-stats::-webkit-scrollbar-thumb {
+  background-color: #5b5b87;
+  border-radius: 6px;
+}
+
+.poll-stats::-webkit-scrollbar-track {
+  background-color: #0a0a1f;
+}
+
+.poll-stats h3 {
+  font-size: 1.5rem;
+  color: #a5b4fc;
+  border-bottom: 1px dashed #4c4c7f;
+  padding-bottom: 0.3rem;
+}
+
+.poll-history-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid #7c3aed;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.3);
+}
+
+.poll-history-card h4 {
+  color: #d8b4fe;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.poll-history-card p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}

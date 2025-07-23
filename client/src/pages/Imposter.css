@@ -1,0 +1,69 @@
+.imposter-page {
+  padding: 2rem;
+  color: #e0e0ff;
+  background-color: #0a0a1f;
+  font-family: 'Orbitron', sans-serif;
+  height: 100vh;              /* ensure fixed height */
+  overflow-y: auto;           /* allow vertical scroll */
+  box-sizing: border-box;
+}
+
+/* Optional for smooth scroll */
+.imposter-page::-webkit-scrollbar {
+  width: 8px;
+}
+.imposter-page::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 6px;
+}
+.imposter-page::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Typography and layout */
+.imposter-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #c084fc;
+}
+
+.imposter-mark-section,
+.imposter-stats-section {
+  margin-top: 2rem;
+  border-top: 1px dashed #4c1d95;
+  padding-top: 1rem;
+}
+
+/* Cards */
+.poll-imposter-card,
+.poll-imposter-stats-card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-left: 4px solid #a855f7;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3);
+}
+
+.poll-imposter-card h4,
+.poll-imposter-stats-card h4 {
+  color: #d8b4fe;
+  margin-bottom: 0.5rem;
+}
+
+/* Button */
+.mark-button {
+  background: linear-gradient(135deg, #ef4444, #7f1d1d);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.mark-button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}

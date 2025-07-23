@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #0d1b2a, #000814);
+  overflow: hidden;
+}
+
+.passkey-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/space-bg.svg') no-repeat center center / cover;
+  position: relative;
+}
+
+.passkey-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 39px;
+  border-radius: 20px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+  width: 350px;
+}
+
+.passkey-card h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #80ffdb;
+}
+
+.passkey-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.generate-btn {
+  background-color: #00b4d8;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: #90e0ef;
+}

@@ -1,0 +1,76 @@
+.summary-wrapper {
+  padding: 2rem;
+  background-color: #0f0c29; /* deep purple */
+  color: #eaeaff;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  background-color: #9d4edd;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+  background-color: #7b2cbf;
+}
+
+.summary-content {
+  background-color: #1d1147;
+  padding: 2rem;
+  border-radius: 16px;
+  line-height: 1.7;
+  box-shadow: 0 0 20px rgba(155, 89, 182, 0.3);
+  font-size: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  white-space: pre-wrap;
+
+    /* Scroll styling */
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #9d4edd #1d1147;
+}
+
+.loader {
+  color: #c77dff;
+  font-weight: bold;
+  text-align: center;
+  animation: blink 1.2s infinite;
+  font-size: 1.1rem;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* For WebKit-based browsers (Chrome, Edge, Safari) */
+.summary-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.summary-content::-webkit-scrollbar-track {
+  background: #1d1147;
+  border-radius: 10px;
+}
+
+.summary-content::-webkit-scrollbar-thumb {
+  background-color: #9d4edd;
+  border-radius: 10px;
+}
+
