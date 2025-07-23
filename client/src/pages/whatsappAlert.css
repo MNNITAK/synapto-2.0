@@ -1,0 +1,94 @@
+/* styles/whatsappAlert.css */
+body {
+  background: #000; /* Dark space backdrop */
+  font-family: 'Orbitron', sans-serif;
+  color: #e0e0ff;
+}
+
+/* === Main Card === */
+.alert-card {
+  max-width: 520px;
+  margin: 60px auto;
+  padding: 32px 40px;
+  border-radius: 20px;
+  background: rgba(20, 20, 40, 0.5);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.25),
+              0 0 8px rgba(96, 165, 250, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* === Heading === */
+.alert-card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #c084fc, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* === Subtext === */
+.subtext {
+  font-size: 0.9rem;
+  color: #a3a3ff;
+  margin-bottom: 20px;
+}
+
+/* === Text Area === */
+textarea {
+  width: 100%;
+  height: 130px;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  background: rgba(255, 255, 255, 0.03);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  box-shadow: inset 2px 2px 8px rgba(124, 58, 237, 0.1),
+              inset -2px -2px 8px rgba(96, 165, 250, 0.05);
+  resize: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* === Button === */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #25d366, #0d3a28);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 255, 128, 0.25);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #20b959, #0d3a28);
+  transform: scale(1.04);
+}
+
+button:disabled {
+  background: #3d3d3d;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* === Response Message === */
+.alert-response {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #9efec2;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

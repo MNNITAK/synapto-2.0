@@ -1,0 +1,12 @@
+/node_modules
+/client/node_modules
+/server/node_modules
+.env
+.DS_Store
+/server/summary
+/server/test/data
+/server/pdf-file
+/server/temp
+
+
+
